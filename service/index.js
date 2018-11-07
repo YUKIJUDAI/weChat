@@ -24,6 +24,8 @@ app.use(cors());
 // 路由
 app.use(bodyParser());
 app.use(router.routes());
-app.use(indexRouter.allowedMethods());
+app.use(router.allowedMethods());
 
-app.listen(80);
+app.listen(80, function() {
+    console.log("connect success in 80");
+});
