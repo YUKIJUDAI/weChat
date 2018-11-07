@@ -1,0 +1,3 @@
+url : http://1fx7343671.iok.la
+Token : qwer
+EncodingAESKey : mKyuEs75oRsmSB00cOCX8dBW5vwu0us8W0H2njh6ajo
