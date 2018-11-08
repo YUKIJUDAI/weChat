@@ -24,6 +24,10 @@
             <td>推荐 iOS >= 7, Android >= 4.1</td>
           </tr>
           <tr>
+            <td>编译产物</td>
+            <td>H5</td>
+          </tr>
+          <tr>
             <td>文档</td>
             <td>有，较为详细</td>
           </tr>
