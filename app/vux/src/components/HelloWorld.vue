@@ -75,6 +75,14 @@
             <td>图表</td>
             <td>VChart,XCircle</td>
           </tr>
+          <tr>
+            <td>地图</td>
+            <td>百度地图，高德地图等</td>
+          </tr>
+          <tr>
+            <td>支付</td>
+            <td>微信钱包,第三方支付平台</td>
+          </tr>
         </tbody>
     </x-table>
   </div>
