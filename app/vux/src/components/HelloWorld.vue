@@ -60,15 +60,19 @@
             <td>less-theme</td>
           </tr>
           <tr>
+            <td>动画</td>
+            <td>原生canvas,css3</td>
+          </tr>
+          <tr>
+            <td>音频，视频</td>
+            <td>原生audio,原生video</td>
+          </tr>
+          <tr>
             <td>Typescript</td>
             <td>不支持</td>
           </tr>
           <tr>
-            <td>微信 jssdk</td>
-            <td>支持</td>
-          </tr>
-          <tr>
-            <td>组件异步加载</td>
+            <td>异步编程</td>
             <td>支持</td>
           </tr>
           <tr>
@@ -90,6 +94,10 @@
           <tr>
             <td>支付</td>
             <td>微信钱包,第三方支付平台</td>
+          </tr>
+          <tr>
+            <td>微信 jssdk</td>
+            <td>支持</td>
           </tr>
           <tr>
             <td>调取微信接口例子</td>
@@ -115,7 +123,7 @@ export default {
     },
     created() {
         this.$http.get("http://localhost/getIP").then(res => {
-            this.ip = "获取到的ip地址为" + res.data.ip_list[0]
+            this.ip = "获取到的ip地址为" + res.data.ip_list[0];
         });
     }
 };

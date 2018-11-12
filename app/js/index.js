@@ -6,10 +6,9 @@ var url = (window.url = "http://localhost:80/");
     });
 })(jQuery);
 
-
-$(function(){
-    $.get(url + "getIP" , function(res){
+$(function() {
+    $.get(url + "getIP", function(res) {
         res = JSON.parse(res);
-        console.log("获得IP为" + res.ip_list.join("\n"))
+        document.querySelector("h3").innerHTML = "获得IP为" + res.ip_list[0];
     });
 });

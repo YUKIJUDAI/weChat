@@ -1,6 +1,8 @@
-import Taro, { Component } from "@tarojs/taro";
+import Taro from '@tarojs/taro-h5';
+import { Component } from "@tarojs/taro-h5";
+import Nerv from "nervjs";
 import { View, Text } from "@tarojs/components";
-import { connect } from "@tarojs/redux";
+import { connect } from "@tarojs/redux-h5";
 
 import "./index.less";
 
@@ -28,8 +30,7 @@ class Index extends Component {
   }
 
   render() {
-    return (
-      <View className="index">
+    return <View className="index">
         <View style="text-align:center">
           <Text>Taro</Text>
         </View>
@@ -143,8 +144,7 @@ class Index extends Component {
             </tbody>
           </table>
         </View>
-      </View>
-    );
+      </View>;
   }
 }
 
