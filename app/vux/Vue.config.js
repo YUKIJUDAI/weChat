@@ -4,5 +4,6 @@ module.exports = {
             options: {},
             plugins: ["vux-ui"]
         });
-    }
+    },
+    lintOnSave: false
 };

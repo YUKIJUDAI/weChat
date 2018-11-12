@@ -12,14 +12,6 @@ const Init = require("./main");
 
 const app = new Koa();
 
-// 静态文件
-app.use(static(__dirname + "./views"));
-app.use(
-    views(__dirname + "/views", {
-        map: { html: "ejs" }
-    })
-);
-
 // 跨域
 app.use(cors());
 
@@ -30,6 +22,15 @@ app.use(router.allowedMethods());
 
 // 日志
 app.use(logger());
+
+// 静态文件
+app.use(
+    views(__dirname + "/views", {
+        map: { html: "ejs" }
+    })
+);
+app.use(static(__dirname + "./views"));
+
 
 //初始化
 // const init = new Init;

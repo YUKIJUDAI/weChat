@@ -10,6 +10,6 @@ var url = (window.url = "http://localhost:80/");
 $(function(){
     $.get(url + "getIP" , function(res){
         res = JSON.parse(res);
-        document.querySelector("span").innerText = res.ip_list.join("\n");
+        console.log("获得IP为" + res.ip_list.join("\n"))
     });
 });

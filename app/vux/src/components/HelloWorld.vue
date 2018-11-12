@@ -24,6 +24,10 @@
             <td>推荐 iOS >= 7, Android >= 4.1</td>
           </tr>
           <tr>
+            <td>是否开源</td>
+            <td>开源</td>
+          </tr>
+          <tr>
             <td>编译产物</td>
             <td>H5</td>
           </tr>
@@ -87,6 +91,10 @@
             <td>支付</td>
             <td>微信钱包,第三方支付平台</td>
           </tr>
+          <tr>
+            <td>调取微信接口例子</td>
+            <td>{{ip}}</td>
+          </tr>
         </tbody>
     </x-table>
   </div>
@@ -99,6 +107,16 @@ export default {
         Group,
         Cell,
         XTable
+    },
+    data() {
+        return {
+            ip: ""
+        };
+    },
+    created() {
+        this.$http.get("http://localhost/getIP").then(res => {
+            this.ip = "获取到的ip地址为" + res.data.ip_list[0]
+        });
     }
 };
 </script>
